@@ -1,71 +1,111 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  
   <title>Bike Scout</title>
 
 </head>
 
 <body>
 
-  <header>
-    <div>
-      <h1>Bike Scout</h1>
-      <h2>A Cycling Resource for Southern California</h2>
+<!--Header-->
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-3 col-md-2 align-self-center">
+          <img src="img/Bike Scout-logos_transparent.png" class="img-fluid" alt="Logo" />
+        </div>
+        <div class="row">
+          <div class="col align-self-center">
+            <h5 class="text-start ">A biking resource for Orange County cyclists</h5>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <div>
-    <h2>Routes</h2>
-    <h3>Local Bike Trails</h3>
-    <p>Excepteur jerky t-bone rump, tri-tip laboris mollit. Ut nisi dolor beef ribs, ea shank sed non reprehenderit beef
-    voluptate!</p>
-  </div>
-
-  <div>
-    <h2>Community</h2>
-    <h3>Join Your Tribe</h3>
-    <p>Irure consequat excepteur commodo, jerky exercitation est ham burgdoggen rump!</p>
-  </div>
-
-  <div>
-    <h2>Bike Shops</h2>
-    <h3>Gear, Repairs, and New Rides</h3>
-    <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-  </div>
-
-  <footer>
-    <div>
-      <h5>Links</h5>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sites</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <div class="collapse navbar-collapse" id="bikeScoutNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#"> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="routes.html"> Routes</a></li>
+            <li class="nav-item"><a class="nav-link" href="community.html"> Community</a></li>
+            <li class="nav-item"><a class="nav-link" href="bikeshops.html"> Bike Shops</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+<!--Main Image-->
+    <div class="container-md">
+      <div class="row">
+        <div class="col pt-2 pb-2">
+          <img src="img/bikefriend.jpg" class="img-fluid rounded shadow p-3 mb-5 bg-body" alt="Bike Friend">
+        </div>
+      </div>
     </div>
-    <div>
-      <h5>Social</h5>
-      <a href="http://instagram.com/">Instagram</a>
-      <a href="http://facebook.com/">Facebook</a>
-      <a href="http://twitter.com/">Twitter</a>
-      <a href="http://youtube.com/">YouTube</a>
+
+<!--Card Group-->
+    <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center pb-4">
+        <div class="card mr-3">
+          <img src="img/bikelane.jpg" class="card-img-top img-fluid" alt="Bike Lane">
+          <div class="card-body">
+            <h5 class="card-title">Cycling News</h5>
+            <p class="card-text">Check out the latest and greatest cycling news at Streetsblog Cal.</p>
+            <button href="https://cal.streetsblog.org/category/bicycling/" type="button" class="btn btn-light">Go!</button>
+          </div>
+        </div>
+        <div class="card ml-3">
+          <img src="img/nightbike.jpg" class="card-img-top img-fluid" alt="Night Biking">
+          <div class="card-body">
+            <h5 class="card-title">Bike Maps</h5>
+            <p class="card-text">Explore the infinite wilds of Orange County.</p>
+            <button href="http://www.octa.net/pdf/OCBikewaysMap.pdf" type="button" class="btn btn-light">OC Bikeways Map</button>
+          </div>
+        </div>
+      </div>
+   
+<!--Subscribe Form-->
+    <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center pb-4">
+        <div class="card rounded shadow">
+            <div class="card-body">
+              <h5 class="card-title">Subscribe</h5>
+                <p class="card-text">Let's be bike friends! We'll send you updates on upcoming group rides, events, and deals on bike gear!</p>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Enter email">
+                <div class="pt-2">
+                <button type="button" class="btn btn-secondary">Sign up</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-      Tel: 1-206-555-1234<br />
-      Email: campsites@nucamp.co
+
+<!--Footer-->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span>
+        <p>Bike Scout
+          Orange County, CA
+        </p>
+        <a role="button" class="btn btn-link" href="info@bikescout.com"><i class="far fa-envelope"></i>  info@bikescout.com</a>
+      </span>
     </div>
   </footer>
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/8d8cf9441f.js" crossorigin="anonymous"></script>
 
 </body>
 

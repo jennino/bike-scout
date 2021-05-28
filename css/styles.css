@@ -1,7 +1,12 @@
-h1 {
-  font-family: 'Fredoka One', cursive;
+h3, h4, h5 {
+ color: #EA5C47
 }
 
-h2, h3, p {
-  font-family: 'Barlow Condensed', sans-serif;
+.jumbotron {
+  padding: 30px;
+  margin: 0;
+}
+
+footer {
+  padding: 20px 0;
 }
