@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/styles.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Odibee+Sans&display=swap" rel="stylesheet">
   
   <title>Bike Scout</title>
 
@@ -25,7 +25,7 @@
         </div>
         <div class="row">
           <div class="col align-self-center">
-            <h5 class="text-start ">A biking resource for Orange County cyclists</h5>
+            <h2 class="text-start ">A biking resource for Orange County cyclists</h2>
           </div>
         </div>
       </div>
@@ -48,57 +48,66 @@
     </nav>
  
 <!--Main Image-->
-    <div class="container-md">
+    <div class="container">
       <div class="row">
-        <div class="col pt-2 pb-2">
+        <div class="col-sm pt-2">              
           <img src="img/bikefriend.jpg" class="img-fluid rounded shadow p-3 mb-5 bg-body" alt="Bike Friend">
         </div>
       </div>
     </div>
 
 <!--Card Group-->
-    <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center pb-4">
-        <div class="card mr-3">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center pb-4">
+      <div class="col">
+        <div class="card m-4 p-2">
           <img src="img/bikelane.jpg" class="card-img-top img-fluid" alt="Bike Lane">
           <div class="card-body">
-            <h5 class="card-title">Cycling News</h5>
-            <p class="card-text">Check out the latest and greatest cycling news at Streetsblog Cal.</p>
-            <button href="https://cal.streetsblog.org/category/bicycling/" type="button" class="btn btn-light">Go!</button>
-          </div>
-        </div>
-        <div class="card ml-3">
-          <img src="img/nightbike.jpg" class="card-img-top img-fluid" alt="Night Biking">
-          <div class="card-body">
-            <h5 class="card-title">Bike Maps</h5>
-            <p class="card-text">Explore the infinite wilds of Orange County.</p>
-            <button href="http://www.octa.net/pdf/OCBikewaysMap.pdf" type="button" class="btn btn-light">OC Bikeways Map</button>
+            <h4 class="card-title">Cycling News</h4>
+            <p class=" lead card-text">The latest and greatest local cycling news.</p>
+            <a class="btn btn-primary" href="https://cal.streetsblog.org/category/bicycling/" role="button">More</a>
           </div>
         </div>
       </div>
-   
+      <div class="col">
+        <div class="card m-4 p-2">
+          <img src="img/nightbike.jpg" class="card-img-top img-fluid" alt="Night Biking">
+          <div class="card-body">
+            <h4 class="card-title">Bike Maps</h4>
+            <p class="lead card-text">Explore the infinite wilds of Orange County.</p>
+            <a class="btn btn-primary" href="http://www.octa.net/pdf/OCBikewaysMap.pdf" role="button">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      
 <!--Subscribe Form-->
     <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center pb-4">
         <div class="card rounded shadow">
             <div class="card-body">
-              <h5 class="card-title">Subscribe</h5>
-                <p class="card-text">Let's be bike friends! We'll send you updates on upcoming group rides, events, and deals on bike gear!</p>
+              <h4 class="card-title">Subscribe</h4>
+                <p class=" lead card-text">Let's be bike friends! We'll send you updates on upcoming group rides, events, and deals on bike gear!</p>
                 <input type="text" class="form-control" placeholder="Email" aria-label="Enter email">
-                <div class="pt-2">
+                <div class="pt-3">
                 <button type="button" class="btn btn-secondary">Sign up</button>
                 </div>
             </div>
         </div>
     </div>
+  </div>
 
 <!--Footer-->
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span>
-        <p>Bike Scout
-          Orange County, CA
-        </p>
-        <a role="button" class="btn btn-link" href="info@bikescout.com"><i class="far fa-envelope"></i>  info@bikescout.com</a>
-      </span>
+      <div class="row">
+        <div class="col-2">
+          <p class="fw-light">Bike Scout</p>
+          <p class="fw-light">Orange County, CA</p>
+        </div>
+        <div class="col-3">
+          <a role="button" class="btn btn-link" href="info@bikescout.com"><i class="far fa-envelope"></i>  info@bikescout.com</a>
+        </div>
+      </div>
     </div>
   </footer>
 

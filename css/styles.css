@@ -1,5 +1,10 @@
-h3, h4, h5 {
- color: #EA5C47
+h2, h4 {
+  font-family: 'Odibee Sans', cursive;
+  color: #EA5C47
+}
+
+footer {
+  padding: 20px 0;
 }
 
 .jumbotron {
@@ -7,6 +12,3 @@ h3, h4, h5 {
   margin: 0;
 }
 
-footer {
-  padding: 20px 0;
-}
